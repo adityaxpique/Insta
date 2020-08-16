@@ -260,6 +260,7 @@ class _FeedScreenState extends State<FeedScreen> {
           topRight: Radius.circular(30.0),
         ),
         child: BottomNavigationBar(
+          backgroundColor: Colors.white60,
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
@@ -289,7 +290,7 @@ class _FeedScreenState extends State<FeedScreen> {
                   color: Color.fromARGB(400, 255, 255, 255),
                   onPressed: () => print('Upload photo'),
                   child: Icon(
-                    Icons.add,
+                    Icons.info,
                     size: 35.0,
                     color: Colors.black87,
                   ),
