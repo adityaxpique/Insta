@@ -1664,7 +1664,7 @@ class _FeedScreenState extends State<FeedScreen> {
                     child: ClipOval(
                       child: InkWell(
                         onTap: () {
-                          FlutterOpenWhatsapp.sendSingleMessage(numbers[index-1], "Thank You");
+                          FlutterOpenWhatsapp.sendSingleMessage(numbers[index-1], "Thank You for the sweet wishes");
                         },
                         child: Image(
                           height: 60.0,
@@ -1705,7 +1705,7 @@ class _FeedScreenState extends State<FeedScreen> {
               icon: Icon(
                 Icons.dashboard,
                 size: 30.0,
-                color: Colors.white,
+                color: Colors.grey,
               ),
               title: Text(''),
             ),
@@ -1713,7 +1713,7 @@ class _FeedScreenState extends State<FeedScreen> {
               icon: Icon(
                 Icons.search,
                 size: 30.0,
-                color: Colors.white,
+                color: Colors.grey,
               ),
               title: Text(''),
             ),
@@ -1740,7 +1740,7 @@ class _FeedScreenState extends State<FeedScreen> {
               icon: Icon(
                 Icons.favorite_border,
                 size: 30.0,
-                color: Colors.white,
+                color: Colors.grey,
               ),
               title: Text(''),
             ),
@@ -1748,7 +1748,7 @@ class _FeedScreenState extends State<FeedScreen> {
               icon: Icon(
                 Icons.person_outline,
                 size: 30.0,
-                color: Colors.white,
+                color: Colors.grey,
               ),
               title: Text(''),
             ),
