@@ -43,7 +43,7 @@ class _VideoAppState extends State<VideoApp> {
                   : _controller.play();
             });
           },
-          backgroundColor: Colors.pink,
+          backgroundColor: Colors.grey,
           elevation: 20,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0)),
               side: BorderSide(color: Colors.black87, width: 2.0)),
