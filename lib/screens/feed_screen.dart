@@ -3,6 +3,7 @@ import 'package:viratbirthday/models/post_model.dart';
 import 'package:viratbirthday/screens/videoplayer.dart';
 import 'package:viratbirthday/screens/view_post_screen.dart';
 import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 class FeedScreen extends StatefulWidget {
   @override
@@ -10,6 +11,49 @@ class FeedScreen extends StatefulWidget {
 }
 
 class _FeedScreenState extends State<FeedScreen> {
+
+  _onAlertWithStylePressed(context) {
+    // Reusable alert style
+    var alertStyle = AlertStyle(
+        animationType: AnimationType.fromTop,
+        isCloseButton: false,
+        isOverlayTapDismiss: false,
+        descStyle: TextStyle(fontWeight: FontWeight.bold),
+        animationDuration: Duration(milliseconds: 100),
+        alertBorder: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15.0),
+          side: BorderSide(
+            color: Colors.grey,
+          ),
+        ),
+        titleStyle: TextStyle(
+          color: Colors.red,
+        ),
+        constraints: BoxConstraints.expand(width: 500)
+    );
+
+    // Alert dialog using custom alert style
+    Alert(
+      context: context,
+      style: alertStyle,
+      type: AlertType.info,
+      title: "HAPPY BIRTHDAY",
+      desc: "Tap on the post to view the wishes of respective person & the stories icon redirects you to Whatsapp.",
+      buttons: [
+        DialogButton(
+          child: Text(
+            "OK",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+          onPressed: () => Navigator.pop(context),
+          color: Color.fromRGBO(0, 179, 134, 1.0),
+          radius: BorderRadius.circular(0.0),
+        ),
+      ],
+    ).show();
+  }
+
+
   Widget _buildPost(int index) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
@@ -288,7 +332,7 @@ class _FeedScreenState extends State<FeedScreen> {
                     borderRadius: BorderRadius.circular(30.0),
                   ),
                   color: Color.fromARGB(255, 255, 255, 255),
-                  onPressed: () => print('Upload photo'),
+                  onPressed: () => _onAlertWithStylePressed(context),
                   child: Icon(
                     Icons.info,
                     size: 35.0,
