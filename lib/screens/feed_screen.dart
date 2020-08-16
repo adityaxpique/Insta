@@ -260,14 +260,14 @@ class _FeedScreenState extends State<FeedScreen> {
           topRight: Radius.circular(30.0),
         ),
         child: BottomNavigationBar(
-          backgroundColor: Colors.white60,
+          backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.dashboard,
                 size: 30.0,
-                color: Colors.black,
+                color: Colors.white,
               ),
               title: Text(''),
             ),
@@ -275,7 +275,7 @@ class _FeedScreenState extends State<FeedScreen> {
               icon: Icon(
                 Icons.search,
                 size: 30.0,
-                color: Colors.grey,
+                color: Colors.white,
               ),
               title: Text(''),
             ),
@@ -287,7 +287,7 @@ class _FeedScreenState extends State<FeedScreen> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-                  color: Color.fromARGB(400, 255, 255, 255),
+                  color: Color.fromARGB(255, 255, 255, 255),
                   onPressed: () => print('Upload photo'),
                   child: Icon(
                     Icons.info,
@@ -302,7 +302,7 @@ class _FeedScreenState extends State<FeedScreen> {
               icon: Icon(
                 Icons.favorite_border,
                 size: 30.0,
-                color: Colors.grey,
+                color: Colors.white,
               ),
               title: Text(''),
             ),
@@ -310,7 +310,7 @@ class _FeedScreenState extends State<FeedScreen> {
               icon: Icon(
                 Icons.person_outline,
                 size: 30.0,
-                color: Colors.grey,
+                color: Colors.white,
               ),
               title: Text(''),
             ),
