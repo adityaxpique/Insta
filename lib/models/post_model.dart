@@ -69,7 +69,7 @@ final List<Post> posts = [
   ),
   Post(
     authorName: 'abhishek3103s',
-    authorImageUrl: 'assets/images/user9.jpg',
+    authorImageUrl: 'assets/images/user9.JPG',
     timeAgo: '50 min',
     imageUrl: 'assets/images/post0.jpg',
   ),
@@ -86,7 +86,7 @@ final List<String> stories = [
   'assets/images/user6.jpg',
   'assets/images/user7.jpg',
   'assets/images/user8.jpg',
-  'assets/images/user9.jpg',
+  'assets/images/user9.JPG',
 
 ];
 final List<String> numbers = [

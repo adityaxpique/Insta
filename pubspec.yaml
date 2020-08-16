@@ -53,6 +53,7 @@ flutter:
   assets:
     - assets/images/
     - assets/
+    - assets/images/user9.JPG
 
   fonts:
     - family: Billabong
